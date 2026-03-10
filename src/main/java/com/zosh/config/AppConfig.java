@@ -53,7 +53,7 @@ public class AppConfig {
     public CorsConfigurationSource corsConfigurationSource() {
         return (HttpServletRequest request) -> {
             CorsConfiguration cfg = new CorsConfiguration();
-            cfg.setAllowedOrigins(List.of("http://localhost:3000", "https://sambit-ecommerce-chi.vercel.app/"));
+            cfg.setAllowedOrigins(List.of("http://localhost:3000", "https://sambit-ecommercee.vercel.app"));
             cfg.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
             cfg.setAllowedHeaders(List.of("*"));
             cfg.setExposedHeaders(List.of("Authorization"));
